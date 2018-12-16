@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="**beep boop** Are you root?" />
+
+    <Button
+        android:id="@+id/buttonYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/button_yes"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/textQuestion" />
+
+    <Button
+        android:id="@+id/buttonNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/button_no"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonYes"
+        app:layout_constraintStart_toEndOf="@+id/buttonYes" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/buttonYes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonYes"
+        app:layout_constraintTop_toBottomOf="@+id/buttonYes"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:tint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonNo"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNo"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+    <Button
+        android:id="@+id/buttonCheat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_cheat"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonNext"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonPrev"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonNext" />
+
+</android.support.constraint.ConstraintLayout>

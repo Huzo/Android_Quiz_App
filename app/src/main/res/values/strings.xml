@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GeoQuizChallenge</string>
+    <string name="button_yes">YES</string>
+    <string name="button_no">NO</string>
+    <string name="button_cheat">CHEAT</string>
+    <string name="button_next">NEXT &gt;</string>
+    <string name="button_prev">&lt; PREV</string>
+    <string name="question_root"><b><i>**beep boop**</i></b> Are you root?</string>
+    <string name="question_root_yes">Security bypassed. Access Granted.</string>
+    <string name="question_root_no">Security threat detected. Access Denied.</string>
+    <string name="question_joke">Do you want to hear a joke?</string>
+    <string name="question_joke_yes">Google "funny jokes."</string>
+    <string name="questoin_joke_no">OK then.</string>
+    <string name="warning_text">Are you sure?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="show_answer_cheater">Here is the answer, cheater...</string>
+</resources>
